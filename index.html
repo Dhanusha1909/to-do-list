@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO-DO-LIST</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="nav-bar">
+            <ul class="nav-li">
+            <a href="./index.html" >HOME</a>
+            <a href="#" >PERSONAL</a>
+            <a href="#" >OTHERS</a>
+            </ul>
+            
+        </nav>
+    <div class="heading">
+        <h1>TO-DO-LIST</h1>
+    </div>
+    <div class="list-maintain">
+        <input id="work" type="text" placeholder="Enter your work" required>
+        <input id="date" type="date" placeholder="enter the due date" required>
+        <button id="btn" onclick="submit()">ADD</button>
+    </div>
+    <div class="List">
+        <table>
+            <thead>
+            
+                <tr>
+                    <th id="checkbox">Manage</th>
+                    <th id="work-header">Work</th>
+                    <th id="DUE-DATE">Due Date</th>
+                </tr>
+            </thead>
+            <tbody id="worklist"></tbody>
+
+        </table>
+    </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
